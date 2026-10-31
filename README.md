@@ -1,6 +1,7 @@
 # SMA Backtester
 
 Тестер стратегии с расчётом PnL, позиции и метрик риска.
+[![CI/CD Pipeline](https://github.com/DanPatserkovskiy/backtester/actions/workflows/ci.yml/badge.svg)](https://github.com/DanPatserkovskiy/backtester/actions/workflows/ci.yml)
 
 ## Описание
 На данный момент проект представляет собой следующее: программа читает ряд цен, генерирует сигналы на основе пересечения короткой и длинной скользящих средних (SMA), симулирует торговлю по правилу "next open" и рассчитывает метрики эффективности. По сути — это тренажёр, на котором можно тестировать стратегию для торговли.
@@ -39,3 +40,7 @@ ctest --test-dir build --output-on-failure
 
 # Запуск самого бэктестера (CLI)
 ./build/backtest_cli
+
+## Документация
+Автоматически сгенерированная документация (Doxygen) доступна по ссылке:
+👉 **[https://danpatserkovskiy.github.io/backtester/](https://danpatserkovskiy.github.io/backtester/)**
